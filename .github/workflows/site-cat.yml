@@ -8,6 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: redshoga/site-cat-action@0.20
+      - uses: redshoga/site-cat-action@0.21
         with:
           token: ${{ secrets.LGTM_TOKEN }}

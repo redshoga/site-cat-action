@@ -505,6 +505,8 @@ async function run() {
 
     // github client
     const token = core.getInput('token');
+    console.log("token:", token)
+
     const octokit = new Octokit({
       auth: `token ${token}`
     });
