@@ -1,7 +1,7 @@
 {
-  "name": "javascript-action",
+  "name": "site-cat-action",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "Site-cat appears on issue when someone posts `lgtm`",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",

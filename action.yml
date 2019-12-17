@@ -1,10 +1,9 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Site Cat LGTM'
+description: 'Site-cat appears on issue when someone posts `lgtm`'
 inputs:
-  milliseconds:
-    description: 'number of milliseconds to wait'
+  token:
+    description: 'GitHub Token(scope: repo)'
     required: true
-    default: '1000'
 runs:
   using: 'node12'
   main: 'dist/index.js'

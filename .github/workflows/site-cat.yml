@@ -1,4 +1,4 @@
-name: LGTM
+name: Site Cat LGTM
 on:
   issue_comment:
     types: [created]
@@ -8,6 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: redshoga/site-cat-action@0.22
+      - uses: redshoga/site-cat-action@1.0
         with:
           token: ${{ secrets.LGTM_TOKEN }}
