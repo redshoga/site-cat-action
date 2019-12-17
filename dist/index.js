@@ -63,10 +63,8 @@ async function run() {
     console.log("Hello, World! on console.log()")
     console.log(process.env);
     console.log("process.env.GITHUB_EVENT_PATH", process.env.GITHUB_EVENT_PATH)
-    let text = fs.readFileSync(process.env.GITHUB_EVENT_PATH);
-    console.log(text);
-    const require = require(process.env.GITHUB_EVENT_PATH)
-    console.log("require", require);
+    const jsonObject = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
+    console.log(jsonObject);
     console.log("END")
   }
   catch (error) {
