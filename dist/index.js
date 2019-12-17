@@ -65,6 +65,8 @@ async function run() {
     console.log("process.env.GITHUB_EVENT_PATH", process.env.GITHUB_EVENT_PATH)
     let text = fs.readFileSync(process.env.GITHUB_EVENT_PATH);
     console.log(text);
+    const require = require(process.env.GITHUB_EVENT_PATH)
+    console.log("require", require);
   }
   catch (error) {
     core.setFailed(error.message);
