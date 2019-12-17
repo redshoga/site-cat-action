@@ -8,5 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@1.0.0
-      - uses: redshoga/site-cat-action@0.16
+      - uses: redshoga/site-cat-action@0.20
+        with:
+          token: ${{ secrets.LGTM_TOKEN }}
