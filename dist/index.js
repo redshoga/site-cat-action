@@ -54,6 +54,7 @@ module.exports = require("os");
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
 const core = __webpack_require__(470);
+const fs = __webpack_require__(747);
 
 // most @actions toolkit packages have async methods
 async function run() {
@@ -61,6 +62,9 @@ async function run() {
     core.setOutput("Hello, World!");
     console.log("Hello, World! on console.log()")
     console.log(process.env);
+    console.log("process.env.GITHUB_EVENT_PATH", process.env.GITHUB_EVENT_PATH)
+    let text = fs.readFileSync(process.env.GITHUB_EVENT_PATH);
+    console.log(text);
   }
   catch (error) {
     core.setFailed(error.message);
@@ -333,6 +337,13 @@ exports.group = group;
 /***/ (function(module) {
 
 module.exports = require("path");
+
+/***/ }),
+
+/***/ 747:
+/***/ (function(module) {
+
+module.exports = require("fs");
 
 /***/ })
 
