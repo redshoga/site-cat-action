@@ -1,0 +1,12 @@
+name: Site Cat Test
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review:
+    types: [submitted]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1.0.0
+      - uses: redshoga/site-cat-action@0.13
