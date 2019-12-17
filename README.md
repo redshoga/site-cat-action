@@ -4,7 +4,7 @@ Site-cat appears on issue when someone posts `lgtm`
 
 # Screenshot
 
-WIP
+<img width="754" alt="Screen Shot 2019-12-17 at 19 26 02" src="https://user-images.githubusercontent.com/33852683/70987367-150ccb80-2103-11ea-9a08-7bb1a934942f.png">
 
 # Settings
 
