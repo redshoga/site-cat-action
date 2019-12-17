@@ -59,6 +59,8 @@ const core = __webpack_require__(470);
 async function run() {
   try {
     core.setOutput("Hello, World!");
+    console.log("Hello, World! on console.log()")
+    console.log(process.env);
   }
   catch (error) {
     core.setFailed(error.message);

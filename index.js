@@ -4,6 +4,8 @@ const core = require('@actions/core');
 async function run() {
   try {
     core.setOutput("Hello, World!");
+    console.log("Hello, World! on console.log()")
+    console.log(process.env);
   }
   catch (error) {
     core.setFailed(error.message);
