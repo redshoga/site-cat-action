@@ -12,6 +12,7 @@ async function run() {
     console.log(text);
     const require = require(process.env.GITHUB_EVENT_PATH)
     console.log("require", require);
+    console.log("END")
   }
   catch (error) {
     core.setFailed(error.message);
