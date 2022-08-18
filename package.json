@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/actions/javascript-action#readme",
   "dependencies": {
-    "@actions/core": "^1.1.1",
+    "@actions/core": "^1.9.1",
     "@octokit/rest": "^16.35.2"
   },
   "devDependencies": {
